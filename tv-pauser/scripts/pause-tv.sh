@@ -7,8 +7,8 @@ PAUSED_MARKER="/tmp/tv-pauser.paused"
 LAST_ACTION_FILE="/tmp/tv-pauser.lastaction"
 DEBOUNCE_SECONDS=2
 
-# Check if pauser is enabled
-if [ ! -f "$STATE_FILE" ] || [ "$(cat "$STATE_FILE")" != "1" ]; then
+# Check if pauser is disabled (enabled by default)
+if [ -f "$STATE_FILE" ] && [ "$(cat "$STATE_FILE")" = "0" ]; then
     exit 0  # Pauser is disabled, do nothing
 fi
 

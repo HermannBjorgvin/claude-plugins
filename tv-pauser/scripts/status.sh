@@ -6,11 +6,11 @@ STATE_FILE="${XDG_STATE_HOME:-$HOME/.local/state}/tv-pauser/enabled"
 echo "=== TV Pauser Status ==="
 echo
 
-# Check enabled state
-if [ -f "$STATE_FILE" ] && [ "$(cat "$STATE_FILE")" = "1" ]; then
-    echo "State: ENABLED"
-else
+# Check enabled state (enabled by default)
+if [ -f "$STATE_FILE" ] && [ "$(cat "$STATE_FILE")" = "0" ]; then
     echo "State: DISABLED"
+else
+    echo "State: ENABLED"
 fi
 
 # Check Home Assistant connectivity
