@@ -11,6 +11,18 @@ TV Pauser automatically pauses your media player (Apple TV, Chromecast, etc.) wh
 - **Graceful failure** - Silently fails if Home Assistant is unreachable (you're not at home)
 - **Debouncing** - Prevents rapid pause/resume toggling
 
+## Installation
+
+```bash
+# Add the marketplace (one-time)
+/plugin marketplace add HermannBjorgvin/claude-plugins
+
+# Install TV Pauser
+/plugin install tv-pauser@hermannbjorgvin
+```
+
+Then restart Claude Code.
+
 ## Prerequisites
 
 - [Home Assistant](https://www.home-assistant.io/) with a media player integration (Apple TV, Chromecast, etc.)

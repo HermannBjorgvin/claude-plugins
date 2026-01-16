@@ -1,6 +1,6 @@
-# hermannbjorgvin's Claude Plugins
+# My Claude Code Plugins
 
-A collection of plugins for [Claude Code](https://claude.ai/claude-code).
+Plugins I've written for myself to make [Claude Code](https://claude.ai/claude-code) fit my workflow. Feel free to use them if they solve your problems too.
 
 ## Installation
 
@@ -14,10 +14,14 @@ A collection of plugins for [Claude Code](https://claude.ai/claude-code).
 
 ## Plugins
 
-| Plugin | Description |
-|--------|-------------|
-| [tv-pauser](./tv-pauser/) | Pause your media player when Claude needs attention, resume when working |
+| Plugin | What it does |
+|--------|--------------|
+| [tv-pauser](./tv-pauser/) | Pauses your TV when Claude needs attention, resumes when you're back to work. No more missing plot points while staring at permission prompts. |
 
 ## License
 
 MIT
+
+---
+
+**Note:** These plugins have been tested on Linux. They might work on macOS and Windows, but no promises.
