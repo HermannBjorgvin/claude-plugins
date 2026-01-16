@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "claude-pauser",
-      "source": ".",
+      "source": "claude-pauser",
       "description": "Pause Apple TV when Claude needs permission, resume when done",
       "version": "1.0.0",
       "author": {
