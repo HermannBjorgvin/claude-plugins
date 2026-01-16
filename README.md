@@ -36,7 +36,7 @@ claude --plugin-dir ./claude-pauser
 
 ```bash
 /plugin marketplace add https://github.com/hermannbjorgvin/claude-pauser
-/plugin install claude-pauser@claude-pauser-plugins
+/plugin install claude-pauser@hermannbjorgvin
 ```
 
 ## Configuration
