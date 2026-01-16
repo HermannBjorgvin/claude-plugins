@@ -1,0 +1,10 @@
+{
+  "name": "claude-pauser",
+  "version": "1.0.0",
+  "description": "Pause Apple TV when Claude needs your attention",
+  "author": {
+    "name": "hermannbjorgvin"
+  },
+  "repository": "https://github.com/hermannbjorgvin/claude-pauser",
+  "license": "MIT"
+}

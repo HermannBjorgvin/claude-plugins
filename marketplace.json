@@ -1,0 +1,18 @@
+{
+  "name": "claude-pauser-plugins",
+  "owner": {
+    "name": "hermannbjorgvin",
+    "url": "https://github.com/hermannbjorgvin"
+  },
+  "plugins": [
+    {
+      "name": "claude-pauser",
+      "source": ".",
+      "description": "Pause Apple TV when Claude needs permission, resume when done",
+      "version": "1.0.0",
+      "author": {
+        "name": "hermannbjorgvin"
+      }
+    }
+  ]
+}
