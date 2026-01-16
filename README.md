@@ -5,8 +5,11 @@ A collection of plugins for [Claude Code](https://claude.ai/claude-code).
 ## Installation
 
 ```bash
-/plugin marketplace add HermannBjorgvin/claude-pauser
-/plugin install <plugin-name>@hermannbjorgvin
+# Add the marketplace (one-time)
+/plugin marketplace add HermannBjorgvin/claude-plugins
+
+# Install a plugin
+/plugin install tv-pauser@hermannbjorgvin
 ```
 
 ## Plugins
