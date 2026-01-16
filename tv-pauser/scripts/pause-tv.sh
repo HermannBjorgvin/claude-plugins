@@ -1,10 +1,10 @@
 #!/bin/bash
-# Pause Apple TV when Claude needs attention (PermissionRequest, Stop hooks)
+# Pause media player when Claude needs attention (PermissionRequest, Stop hooks)
 # Fails gracefully if not at home (HA unreachable)
 
-STATE_FILE="${XDG_STATE_HOME:-$HOME/.local/state}/claude-pauser/enabled"
-PAUSED_MARKER="/tmp/claude-pauser.paused"
-LAST_ACTION_FILE="/tmp/claude-pauser.lastaction"
+STATE_FILE="${XDG_STATE_HOME:-$HOME/.local/state}/tv-pauser/enabled"
+PAUSED_MARKER="/tmp/tv-pauser.paused"
+LAST_ACTION_FILE="/tmp/tv-pauser.lastaction"
 DEBOUNCE_SECONDS=2
 
 # Check if pauser is enabled
@@ -30,12 +30,12 @@ fi
 touch "$PAUSED_MARKER"
 date +%s > "$LAST_ACTION_FILE"
 
-# Pause Apple TV via Home Assistant (graceful failure with timeout)
+# Pause media player via Home Assistant (graceful failure with timeout)
 curl -s -f --connect-timeout 2 --max-time 5 \
-  -X POST "${CLAUDE_PAUSER_HA_URL:-http://homeassistant.local:8123}/api/services/media_player/media_pause" \
-  -H "Authorization: Bearer $CLAUDE_PAUSER_HA_TOKEN" \
+  -X POST "${TV_PAUSER_HA_URL:-http://homeassistant.local:8123}/api/services/media_player/media_pause" \
+  -H "Authorization: Bearer $TV_PAUSER_HA_TOKEN" \
   -H "Content-Type: application/json" \
-  -d "{\"entity_id\": \"${CLAUDE_PAUSER_HA_ENTITY:-media_player.apple_tv}\"}" \
+  -d "{\"entity_id\": \"${TV_PAUSER_HA_ENTITY:-media_player.apple_tv}\"}" \
   >/dev/null 2>&1 || true  # Fail silently - probably not at home
 
 exit 0

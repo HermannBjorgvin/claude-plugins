@@ -1,5 +1,5 @@
 {
-  "description": "Productivity plugin: pause TV when idle, resume when working",
+  "description": "Productivity plugin: pause media when idle, resume when working",
   "hooks": {
     "SessionStart": [
       {

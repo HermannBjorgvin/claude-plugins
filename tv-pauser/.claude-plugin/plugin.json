@@ -1,7 +1,7 @@
 {
-  "name": "claude-pauser",
+  "name": "tv-pauser",
   "version": "1.0.0",
-  "description": "Pause Apple TV when Claude needs your attention",
+  "description": "Pause media player when Claude needs your attention",
   "author": {
     "name": "hermannbjorgvin"
   },

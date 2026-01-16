@@ -13,7 +13,7 @@ A collection of plugins for [Claude Code](https://claude.ai/claude-code).
 
 | Plugin | Description |
 |--------|-------------|
-| [claude-pauser](./claude-pauser/) | Pause your Apple TV when Claude needs attention, resume when working |
+| [tv-pauser](./tv-pauser/) | Pause your media player when Claude needs attention, resume when working |
 
 ## License
 
